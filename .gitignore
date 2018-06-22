@@ -1,0 +1,5 @@
+nimdeps
+nimcache
+*.exe
+*.swp
+test*
