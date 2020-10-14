@@ -1,0 +1,5 @@
+setupDepFile	nimdeps.html#setupDepFile.m,static[string]	nimdeps: setupDepFile(filename: static[string]): untyped	
+setupDepFiles	nimdeps.html#setupDepFiles.m,static[seq[string]]	nimdeps: setupDepFiles(filenames: static[seq[string]]): untyped	
+setupDepDir	nimdeps.html#setupDepDir.t,untyped	nimdeps: setupDepDir(dir: untyped): untyped	
+setupDepDirs	nimdeps.html#setupDepDirs.m,static[seq[string]]	nimdeps: setupDepDirs(dirs: static[seq[string]]): untyped	
+setupDeps	nimdeps.html#setupDeps.m,static[seq[string]]	nimdeps: setupDeps(fdirs: static[seq[string]]): untyped	
