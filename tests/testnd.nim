@@ -1,4 +1,4 @@
 import nimdeps
 
-const FDIRS = @["testnd.nim", "nimcache"]
+const FDIRS = @["testnd.nim"]
 setupDeps(FDIRS)

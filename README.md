@@ -16,7 +16,7 @@ This will download and install nimdeps in the standard Nimble package location, 
 
 __Usage__
 
-Module documentation can be found [here](http://nim.genotrance.com/nimdeps).
+Module documentation can be found [here](http://genotrance.github.io/nimdeps/nimdeps.html).
 
 ```nim
 import nimdeps
@@ -29,7 +29,7 @@ setupDepDir("depDir1")
 setupDeps(@["data2.dat", "depDir2"])
 ```
 
-NOTE: Nimdeps should be invoked prior to loading any of the dependencies so that they are extracted prior to usage. At this time, DLL files are not supported since Nim loads libraries prior to nimdeps running.
+NOTE: Nimdeps should be invoked prior to loading any of the dependencies so that they are extracted prior to usage. At this time, DLL files are not supported if they are loaded using the `{.dynlib.}` pragma since Nim loads such libraries prior to nimdeps running. Likewise if they are linked with `-l` since the OS checks for them at load time. This can be avoided by manually loading the DLL using the `dynlib` module or lazily loaded using the [lazylib](https://github.com/genotrance/lazylib) package.
 
 __Feedback__
 
